@@ -1,11 +1,3 @@
-<IfModule mod_rewrite.c>
-
 RewriteEngine On
-
-RewriteCond %{HTTP_HOST} !^www.demirer.info$ [NC]
-RewriteRule ^(.*)$ https://www.demirer.info/$1 [L,R=301]
-
-RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.*)$ https://www.demirer.info/$1 [R=301,L]
-
-</IfModule>
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
