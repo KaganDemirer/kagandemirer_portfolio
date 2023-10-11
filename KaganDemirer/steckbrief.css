@@ -1,4 +1,4 @@
-/* farbpalette */
+/* FARBPALETTE */
 
 :root {
     --primary-background-color: #f5f5f5;
@@ -12,14 +12,62 @@
         --primary-background-color: #212121;
         --secondary-background-color: #424242;
         --primary-color: #f5f5f5;
-        --secondary-color: #e0e0e0;
+        --secondary-color: #7f7f7f;
     }
 }
 
+/* FARBPALETTE END */
+
+/* ALLGEMEIN */
 
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    padding: 0px 20px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.body-page-element {
+    padding: 20px;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-family: 'Raleway';
+}
+
+a, p, li, span {
+    color: var(--secondary-color);
+}
+
+.body-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 70px 50px;
+    height: calc(92vh - 95px);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* HEADER */
@@ -29,7 +77,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 12px 20px;
+    width: 96vw;
+    position: fixed;
+    margin: 0 -20px;
+    z-index: 100;
 }
 
 header h1 {
@@ -77,28 +129,78 @@ header nav ul li a:hover {
 
 header nav ul li a {
     text-decoration: none;
-    color: grey;
+    color: var(--tertiary-color);
 }
 
 /* HEADER END */
+
+/* LINEAR GRADIENT */
+
+#linear-gradient {
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(var(--primary-background-color) 50%, rgba(0,0,0,0));
+    z-index: 1;
+}
+
+/* LINEAR GRADIENT END */
+
+/* vorstellung */
+
+#profile-picture {
+    visibility: hidden;
+    animation: opacityIn 0.5s ease-in-out 3s;
+    animation-fill-mode: forwards;
+    height: 70vmin;
+}
+
+#vorstellung-ueberschrift {
+    visibility: hidden;
+    animation: slideInFromTop 0.5s ease-in-out 3.5s, opacityIn 0.5s ease-in-out 3.5s;
+    animation-fill-mode: forwards;
+    margin-bottom: 12px;
+}
+
+#vorstellung-text {
+    font-family: 'Roboto Mono';
+}
+
+#profile-description-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#profile-picture-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 /* ANIMATION */
 
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-10%);
+        visibility: visible;
     }
     100% {
         transform: translateX(0);
+        visibility: visible;
     }
 }
 
 @keyframes slideInFromRight {
     0% {
         transform: translateX(10%);
+        visibility: visible;
     }
     100% {
         transform: translateX(0);
+        visibility: visible;
     }
 }
 
@@ -116,18 +218,22 @@ header nav ul li a {
 @keyframes slideInFromBottom {
     0% {
         transform: translateY(10%);
+        visibility: visible;
     }
     100% {
         transform: translateY(0);
+        visibility: visible;
     }
 }
 
 @keyframes opacityIn {
     0% {
         opacity: 0;
+        visibility: visible;
     }
     100% {
         opacity: 1;
+        visibility: visible;
     }
 }
 

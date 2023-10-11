@@ -2,21 +2,42 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto Mono">
     <title>Kagan Demirer - Steckbrief</title>
     <link rel="stylesheet" href="steckbrief.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="steckbrief.js"></script>
 </head>
 <body>
     <header id="header" class="header">
         <h1>Kagan Demirer</h1>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="#index.html">Über mich</a></li>
-                <li><a href="#Steckbrief.html">Karriere</a></li>
+                <li><a href="#vorstellung">Über mich</a></li>
+                <li><a href="#karriere">Karriere</a></li>
                 <li><a href="#Kontakt.html">Projekte</a></li>
                 <li><a href="#Impressum.html">Ziele</a></li>
             </ul>
         </nav>
     </header>
+    <div id="linear-gradient">
+    </div>
+    <div class="body-page" id="vorstellung">
+        <div id="profile-picture-div" class="body-page-element">
+            <img id="profile-picture" src="images/Foto.jpg" alt="Profile Picture">
+        </div>
+        <div id="profile-description-div" class="body-page-element">
+            <h2 id="vorstellung-ueberschrift">Über mich</h2>
+            <p id="vorstellung-text" class="unselectable"></p>
+        </div>
+    </div>
+    <div class="body-page" id="karriere">
+        <div id="karriere-text-div" class="body-page-element">
+            <h2>Karriere</h2>
+            <p id="karriere-text" class="unselectable"></p>
+        </div>
+        <div id="karriere-picture-div" class="body-page-element">
+            <img id="karriere-picture" src="https://www.w3schools.com/howto/img_avatar.png" alt="Karriere Picture">
+        </div>
 </body>
 </html>
