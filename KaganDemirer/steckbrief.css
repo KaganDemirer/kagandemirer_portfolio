@@ -195,6 +195,10 @@ header nav ul li a {
     align-items: center;
 }
 
+#karriere-line-div h4{
+    font-size: 16px;
+}
+
 .karriere-line-img{
     display: flex;
     flex-direction: row;
@@ -204,7 +208,7 @@ header nav ul li a {
 
 
 .karriere-line-img img{
-    height: 80px;
+    height: 8vh;
     background: radial-gradient(ellipse at 50% 50%, var(--secondary-background-color), var(--primary-background-color) 80%   , var(--primary-background-color) 100%);
 }
 
@@ -219,7 +223,8 @@ header nav ul li a {
 line {
     background-color: var(--secondary-color);
     height: 30px;
-    width: 2px;
+    width: 3px;
+    border-radius: 10px;
 }
 
 .opacity-animation {
@@ -242,6 +247,19 @@ line {
         padding: 70px 20px;
         height: 100vh;
     }
+
+
+    header h1 {
+        color: var(--primary-color);
+        font-family: 'Raleway';
+        font-size: 40px;
+        animation: slideInFromLeft 1s ease-in-out, opacityIn 1s ease-in-out;
+    }
+    
+    header nav ul li {
+        font-size: 30px;
+    }
+
     #profile-picture {
         visibility: hidden;
         animation: opacityIn 0.5s ease-in-out 3s;
@@ -261,6 +279,16 @@ line {
     #vorstellung-text {
         font-family: 'Roboto Mono';
         font-size: 24px;
+    }
+    
+    #karriere-line-div h4{
+        font-size: 32px;
+    }
+    
+    line {
+        height: 50px;
+        width: 5px;
+        border-radius: 10px;
     }
 }
 
