@@ -61,18 +61,6 @@ a, p, li, span {
     height: calc(92vh - 95px);
 }
 
-@media screen and (max-width: 1280px) {
-    .body-page {
-        flex-direction: column;
-        padding: 70px 20px;
-        height: auto;
-    }
-
-    #vorstellung {
-        padding-top: 200px;
-    }
-}
-
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -241,6 +229,45 @@ line {
 }
 
 /* Karriere END */
+
+
+
+/* MOBILE */
+
+
+@media screen and (max-width: 1280px) {
+    .body-page {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 70px 20px;
+        height: 100vh;
+    }
+    #profile-picture {
+        visibility: hidden;
+        animation: opacityIn 0.5s ease-in-out 3s;
+        animation-fill-mode: forwards;
+        height: 90vw;
+    }
+    
+    #vorstellung-ueberschrift {
+        visibility: hidden;
+        animation: slideInFromTop 0.5s ease-in-out 3.5s, opacityIn 0.5s ease-in-out 3.5s;
+        animation-fill-mode: forwards;
+        margin-bottom: 12px;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    #vorstellung-text {
+        font-family: 'Roboto Mono';
+        font-size: 24px;
+    }
+}
+
+/* MOBILE END */
+
+
+
 
 /* ANIMATION */
 
