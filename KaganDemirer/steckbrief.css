@@ -163,8 +163,18 @@ header nav ul li a {
     width: 100%;
 }
 
-#vorstellung-text {
+#vorstellung-text{
     font-family: 'Roboto Mono';
+}
+
+#vorstellung-text-cursor{
+    border-right: .05em solid rgba(255,255,255,.75);
+    animation: blinkTextCursor 1s infinite;
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
 }
 
 #profile-description-div {
@@ -235,19 +245,50 @@ line {
 
 /* Karriere END */
 
+/* PROJEKTE */
+
+#projekte-picture-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+#projekte-ueberschrift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projekte-picture-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* PROJEKTE END */
+
 
 
 /* MOBILE */
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 32px;
+    }
+
     .body-page {
         flex-direction: column;
         justify-content: space-around;
         padding: 70px 20px;
         height: 100vh;
     }
-
 
     header h1 {
         color: var(--primary-color);
@@ -272,7 +313,6 @@ line {
         animation: slideInFromTop 0.5s ease-in-out 3.5s, opacityIn 0.5s ease-in-out 3.5s;
         animation-fill-mode: forwards;
         margin-bottom: 12px;
-        font-size: 40px;
         width: 100%;
     }
 
@@ -289,6 +329,10 @@ line {
         height: 50px;
         width: 5px;
         border-radius: 10px;
+    }
+
+    #projekte-picture-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
