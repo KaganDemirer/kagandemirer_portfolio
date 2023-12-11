@@ -3,6 +3,7 @@ $(document).ready(function() {
     for (const element of karriere_line_elements) {
         observer.observe(element);
     }
+    currentSlide(1);
     const age = Math.floor((new Date() - new Date(2000, 8, 8)) / 3.15576e+10);
     setTimeout(() => {
         typeWriter("Hallo!")
@@ -19,7 +20,7 @@ $(document).ready(function() {
                 setTimeout(resolve, 700);
             });
         })
-        .then(() => typeWriter("Ich bin Kagan Demirer, " + age + " Jahre alt und komme aus Walheim. Ich bin ein sehr offener und freundlicher Mensch. Ich bin sehr motiviert und lerne gerne neue Dinge. Ich bin sehr sportlich und spiele gerne Fussball. Ich bin sehr interessiert an der Informatik und möchte mich in diesem Bereich weiterentwickeln."));
+        .then(() => typeWriter("Ich bin Kagan Demirer, " + age + " Jahre alt und komme aus Walheim. Ich absolviere mein duales Studium bei der W&W Informatik GmbH. Offenheit, Ehrgeiz und Flexibilität prägen meine Persönlichkeit. Pünktlichkeit, Zuverlässigkeit und Verantwortungsbewusstsein sind für mich selbstverständlich. Meine kommunikativen Fähigkeiten und Hilfsbereitschaft erleichtern den Umgang mit anderen, und ich bewahre auch in stressigen Situationen Geduld."))
     }, 4500); // Wait for 2 seconds before starting the first typeWriter
 });
 
@@ -77,4 +78,33 @@ function typeWriterDelete(amount) {
         }
         deleteText();
     });
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
