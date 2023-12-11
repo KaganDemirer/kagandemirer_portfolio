@@ -362,7 +362,7 @@ line {
 
 .projekte-picture-div {
     width: 80%;
-    height: 300px;
+    min-height: 300px;
     border-radius: 10px;
     background-color: var(--secondary-background-color);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -372,31 +372,25 @@ line {
     padding: 20px;
 }
 .projekte-picture-div img {
+    width: 300px;
+    min-height: 300px;
     border-radius: 10px;
     background-color: var(--tertiary-background-color);
-    flex: 1.5;
     margin-right: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     transition: all 0.2s ease-in-out;
+    object-fit: contain;
 }
 
 .projekte-picture-bubble{
     width: 100%;
-    flex: 2;
     position: relative;
+    overflow: hidden;
 }
 
 .projekte-picture-div:hover {
     transform: scale(1.04);
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-}
-
-.projekte-picture-div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
 }
 
 /* PROJEKTE END */
@@ -405,6 +399,11 @@ line {
 
 /* MOBILE */
 
+@media screen and (max-width: 1600px) {
+    #projekte-picture-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -458,10 +457,6 @@ line {
         height: 50px;
         width: 5px;
         border-radius: 10px;
-    }
-
-    #projekte-picture-grid {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
 
