@@ -417,28 +417,51 @@ line {
     header h1 {
         color: var(--primary-color);
         font-family: 'Raleway';
+        font-size: 3em;
         animation: slideInFromLeft 1s ease-in-out, opacityIn 1s ease-in-out;
     }
+
+    header nav ul li a {
+        font-size: 1.5em;
+    }
     
+    #vorstellung {
+        justify-content: flex-start;
+    }
 
     #profile-picture {
         visibility: hidden;
         animation: opacityIn 0.5s ease-in-out 3s;
         animation-fill-mode: forwards;
-        height: 60vh;
+        height: 70%;
+    }
+
+    #profile-picture-div {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
+    #profile-description-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     #vorstellung-ueberschrift {
         visibility: hidden;
         animation: slideInFromTop 0.5s ease-in-out 3.5s, opacityIn 0.5s ease-in-out 3.5s;
         animation-fill-mode: forwards;
         margin-bottom: 12px;
         width: 100%;
+        font-size: 2.5em;
     }
 
     #vorstellung-text {
         font-family: 'Roboto Mono';
-        font-size: 16px;
+        font-size: 1.5em;
     }
     
     #karriere-line-div h4{
