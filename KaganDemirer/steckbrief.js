@@ -1,6 +1,10 @@
 $(document).ready(function() {
     const karriere_line_elements = document.getElementsByClassName('karriere-line-element');
+    const projekte_picture_div = document.getElementsByClassName('projekte-picture-div');
     for (const element of karriere_line_elements) {
+        observer.observe(element);
+    }
+    for (const element of projekte_picture_div) {
         observer.observe(element);
     }
     currentSlide(1);

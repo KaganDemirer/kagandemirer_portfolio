@@ -370,6 +370,7 @@ line {
     overflow: hidden;
     transition: all 0.2s ease-in-out;
     padding: 20px;
+    visibility: hidden;
 }
 .projekte-picture-div img {
     width: 300px;
