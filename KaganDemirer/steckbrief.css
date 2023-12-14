@@ -407,10 +407,6 @@ line {
 
 @media screen and (max-width: 1000px) {
 
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 32px;
-    }
-
     .body-page {
         flex-direction: column;
         justify-content: space-around;
@@ -421,19 +417,15 @@ line {
     header h1 {
         color: var(--primary-color);
         font-family: 'Raleway';
-        font-size: 40px;
         animation: slideInFromLeft 1s ease-in-out, opacityIn 1s ease-in-out;
     }
     
-    header nav ul li {
-        font-size: 30px;
-    }
 
     #profile-picture {
         visibility: hidden;
         animation: opacityIn 0.5s ease-in-out 3s;
         animation-fill-mode: forwards;
-        height: 90vw;
+        height: 60vh;
     }
     
     #vorstellung-ueberschrift {
@@ -446,7 +438,7 @@ line {
 
     #vorstellung-text {
         font-family: 'Roboto Mono';
-        font-size: 24px;
+        font-size: 16px;
     }
     
     #karriere-line-div h4{
@@ -530,5 +522,6 @@ line {
         transform: scale(1.2);
     }
 }
+
 
 /* ANIMATION END */
