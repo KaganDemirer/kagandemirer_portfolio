@@ -14,7 +14,7 @@ $(document).ready(function() {
         .then(() => {
             // Wait for 3 seconds before starting typeWriterDelete
             return new Promise((resolve) => {
-                setTimeout(resolve, 3000);
+                setTimeout(resolve, 1500);
             });
         })
         .then(() => typeWriterDelete(6))
