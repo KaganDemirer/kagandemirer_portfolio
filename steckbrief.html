@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto Mono">
+    <title>Kagan Demirer - Steckbrief</title>
+    <link rel="stylesheet" href="steckbrief.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="steckbrief.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <h1>Kagan Demirer</h1>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#vorstellung">Über mich</a></li>
+                <li><a href="#karriere">Karriere</a></li>
+                <li><a href="#projekte">Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="linear-gradient">
+    </div>
+    <div class="body-page" id="vorstellung">
+        <div id="profile-picture-div" class="body-page-element">
+            <img id="profile-picture" src="images/Foto.jpg" alt="Profile Picture">
+        </div>
+        <div id="profile-description-div" class="body-page-element">
+            <h2 id="vorstellung-ueberschrift">Über mich</h2>
+            <p id="vorstellung-text" class="unselectable"></p>
+        </div>
+    </div>
+    <div class="body-page" id="karriere">
+        <div id="karriere-line-div" class="body-page-element">
+            <h4 class="karriere-line-element">2017</h4>
+            <div id="kbc" class="karriere-line-img karriere-line-element">
+                <img src="images/kbc.png" alt="Kolping-Bildungscampus">
+            </div>
+            <h4 class="karriere-line-element">2019</h4>
+            <line class="karriere-line-element"></line>
+            <h4 class="karriere-line-element">2019</h4>
+            <div id="asb" class="karriere-line-img karriere-line-element">
+                <img src="images/asb.png" alt="Arbeiter-Samariter-Bund">
+            </div>
+            <h4 class="karriere-line-element">2020</h4>
+            <line class="karriere-line-element"></line>
+            <h4 class="karriere-line-element">2020</h4>
+            <div id="css" class="karriere-line-img karriere-line-element">
+                <img src="images/css.png" alt="Carl-Schaefer-Schule">
+            </div>
+            <h4 class="karriere-line-element">2022</h4>
+            <line class="karriere-line-element"></line>
+            <h4 class="karriere-line-element">2022</h4>
+            <div id="w&w" class="karriere-line-img karriere-line-element">
+                <img src="images/w&w.jpeg" alt="W&W">
+                <img src="images/dhbw.png" alt="DHBW Stuttgart">
+            </div>
+            <h4 class="karriere-line-element">vorraussichtlich 2025</h4>
+        </div>
+        <div id="karriere-picture-div" class="body-page-element">
+            <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/img_bk.jpg" alt="Berufskolleg Abschluss 2022" style="object-fit:scale-down;height:100%;width: 100%">
+                    <div class="text">Berufskolleg Abschluss 2022</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/img_fk.jpeg" alt="" style="object-fit:scale-down;height:100%;width: 100%">
+                    <div class="text">Fatih Yanikoglu und ich Berufskolleg Abschluss 2022</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/img_jav.jpg" alt="W&W Informatik GmbH JAV" style="object-fit:scale-down;height:100%;width: 100%">
+                    <div class="text">W&W Informatik GmbH JAV</div>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+        </div>
+    </div>
+    <div id="projekte">
+        <div id="projekte-description-div">
+            <h2 id="projekte-ueberschrift">Projekte</h2>
+        </div>
+        <div id="projekte-picture-grid">
+            <div id="projekte-picture-div-1" class="projekte-picture-div">
+                <img id="projekte-picture-1" src="images/Porg.png" alt="Project Porg">
+                <div id="projekte-picture-bubble-1" class="projekte-picture-bubble">
+                    <h2>Project Porg</h2><br>
+                    <p>
+                        Project Porg ist ein Projekt, welches ich und 3 Kommilitonen im Rahmen meines dualen Studiums zum Informatiker bei der W&W Informatik GmbH durchgeführt haben.<br>
+                        Es handelt sich dabei um einen Chatbot für Studenten an der DHBW im Studiengang Informatik. Der Chatbot ist in der Lage, Fragen zu beantworten, die von unserem Entwickler-Team aus der DHBW-Webseite eingepflegt wurden.<br>
+                        Dazu zählen Fragen wie: "Was sind die Voraussetzungen für meine wissenschaftliche Arbeit (T200)?" oder "Wer ist Professor XY?". <br>
+                        Der Chatbot ist in der Lage, die Fragen zu verstehen, dementsprechend zu antworten und auch Steckbriefe von Dozenten und Proffesoren zu erstellen.<br>
+                    </p>
+                </div>
+            </div>
+            <div id="projekte-picture-div-2" class="projekte-picture-div">
+                <img id="projekte-picture-2" src="images/logo.png" alt="Dönerguide">
+                <div id="projekte-picture-bubble-2" class="projekte-picture-bubble">
+                    <h2>Dönerguide</h2><br>
+                    <p>
+                        Der Dönerguide ist ein Projekt, welches ich und 4 Kommilitonen im Rahmen meines dualen Studiums zum Informatiker bei der W&W Informatik GmbH durchgeführt haben.<br>
+                        Es handelt sich dabei um eine Web-App, die es dem Nutzer ermöglicht, Dönerläden in seiner Umgebung zu finden, zu bewerten und nach Kleinigkeiten zu filtern.<br>
+                        Man kann zum Beispiel nach Dönerläden suchen, die einen vegetarischen Döner anbieten oder die auch Pizza etc. anbieten.<br>
+                        Die Web-App ist in der Lage, die Standorte der Dönerläden auf einer Karte anzuzeigen und die Bewertungen der Nutzer anzuzeigen.<br>
+                    </p>
+                </div>
+            </div>
+            <div id="projekte-picture-div-3" class="projekte-picture-div">
+                <img id="projekte-picture-3" src="images/ewun.jpeg" alt="Eat What U Need">
+                <div id="projekte-picture-bubble-3" class="projekte-picture-bubble">
+                    <h2>EatWhatUNeed</h2><br>
+                    <p>
+                        EatWhatUNeed ist meine erste veröffentlichte App im Google Play Store und im Apple App Store.<br>
+                        2 Jahre vor meinem dualen Studium habe ich diese App entwickelt, um erste Erfahrungen im Bereich der Entwicklung zu sammeln.<br>
+                        Die EatWhatUNeed-App lässt dich ganz einfach nach den leckersten Gerichten international suchen und in deiner Sprache anzeigen. <br>
+                        Außerdem kannst du sie schnell in deine Einkaufsliste einfügen und mit Freunden teilen.
+                        Die App ist im Google Play Store und im Apple App Store verfügbar gewesen.
+                    </p>
+                </div>
+            </div>
+            <div id="projekte-picture-div-5" class="projekte-picture-div">
+                <img id="projekte-picture-5" src="images/drinkexen.jpeg" alt="Drink.exe(n)">
+                    <div id="projekte-picture-bubble-5" class="projekte-picture-bubble">
+                    <h2>Drink.exe(n)</h2><br>
+                    <p>
+                        Drink.exe(n) ist eine Trinkspiel-App, die ich für einen Freund entwickelt habe.<br>
+                        In der App können unbegrenzte Spielernamen eingegeben und verschiedene Trinkspiele ausgewählt werden.<br>
+                        Das Zufallsprinzip der App sorgt dafür, dass die Spieler immer wieder neue Aufgaben erhalten und somit der Spaßfaktor steigt.<br>
+                        Die App ist im Google Play Store verfügbar gewesen.
+                    </p>
+                </div>
+            </div>
+            <div id="projekte-picture-div-4" class="projekte-picture-div">
+                <img id="projekte-picture-4" src="images/aio.jpeg" alt="All in One">
+                <div id="projekte-picture-bubble-4" class="projekte-picture-bubble">
+                    <h2>All in One</h2><br>
+                    <p>
+                        All in One ist ein System, welches Kunden die Möglichkeit gibt, Bestellungen in einem Lokal über ihr Handy aufzugeben.<br>
+                        Der Kunde kann mit seinem Handy am Tisch einen NFC Tag scannen, der ihm die App mit den benötigten Daten öffnet. Der Kunde kann dann seine Bestellung aufgeben.
+                        Die Bestellung wird dann an die Küche weitergeleitet und dort auf einem Bildschirm angezeigt. Der Kellner kann dann die Bestellung abholen und zum Kunden bringen und die Bestellung als erledigt markieren.<br>
+                        Der Kunde kann den Kellner auch über die App rufen, wenn er zum Beispiel noch eine Bestellung aufgeben möchte oder bezahlen möchte.<br>
+                        Die App ist im Google Play Store und im Apple App Store verfügbar gewesen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
