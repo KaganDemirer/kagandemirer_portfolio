@@ -24,7 +24,7 @@ $(document).ready(function() {
                 setTimeout(resolve, 700);
             });
         })
-        .then(() => typeWriter("Ich bin Kagan Demirer, " + age + " Jahre alt und komme aus Walheim. Ich absolviere mein duales Studium bei der W&W Informatik GmbH. Offenheit, Ehrgeiz und Flexibilität prägen meine Persönlichkeit. Pünktlichkeit, Zuverlässigkeit und Verantwortungsbewusstsein sind für mich selbstverständlich. Meine kommunikativen Fähigkeiten und Hilfsbereitschaft erleichtern den Umgang mit anderen, und ich bewahre auch in stressigen Situationen Geduld."))
+        .then(() => typeWriter("Ich bin Kagan Demirer, " + age + " Jahre alt und komme aus Lauffen am Neckar. Ich absolviere mein duales Studium bei der W&W Informatik GmbH. Offenheit, Ehrgeiz und Flexibilität prägen meine Persönlichkeit. Pünktlichkeit, Zuverlässigkeit und Verantwortungsbewusstsein sind für mich selbstverständlich. Meine kommunikativen Fähigkeiten und Hilfsbereitschaft erleichtern den Umgang mit anderen, und ich bewahre auch in stressigen Situationen Geduld."))
     }, 4500); // Wait for 2 seconds before starting the first typeWriter
 });
 
