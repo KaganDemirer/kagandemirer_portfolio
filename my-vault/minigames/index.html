@@ -32,6 +32,7 @@
         <meta property="twitter:title" content="Minigames | Kağan Demirer">
         <meta property="twitter:description" content="Play fun minigames created by Kağan Demirer.">
         <meta property="twitter:image" content="https://kagandemirer.de/images/image.jpg">
+        <script src="/language.js"></script>
     </head>
     <body class="body-2">
         <div class="div-block-14 div-block-main">
@@ -41,10 +42,10 @@
                         <div class="side-bar-menu">
                             <div class="intro">
                                 <a href="#" class="brand w-nav-brand">
-                                    <img src="/images/image.jpg" loading="eager" data-w-id="2e8b3fed-ea97-91a4-ec23-480364a5e3b9" alt="" class="image"/>
+                                    <img src="/images/image.jpg" loading="eager" data-w-id="2e8b3fed-ea97-91a4-ec23-480364a5e3b9" alt="Portrait of Kağan Demirer" class="image"/>
                                 </a>
                                 <div class="div-block-24">
-                                    <p class="paragraph-2">I'm Kağan, a Computer Science student at DHBW Stuttgart.</p> 
+                                    <p class="paragraph-2" data-i18n="header_text">I'm Kağan, a Computer Science student at DHBW Stuttgart.</p> 
                                     <div class="mob_social-icons">
                                         <a href="https://github.com/KaganDemirer" target="_blank" class="social_linkblock w-inline-block">
                                             <div class="code-embed-3 w-embed">
@@ -82,13 +83,14 @@
                         <div class="nav-menu">
                             <a href="/" class="button-menu w-inline-block">
                                 <div class="menu_pills">
-                                    <h4>Case studies</h4>
+                                    <h4 data-i18n="menu_pill_projects">Projects</h4>
                                 </div>
                             </a>
+
                             <div class="div-block-49">
                                 <a href="/my-vault" class="button-menu w-inline-block">
                                     <div class="menu_pills">
-                                        <h4>My vault</h4>
+                                        <h4 data-i18n="menu_pill_vault">My vault</h4>
                                     </div>
                                 </a>
                                 <a data-w-id="2327777a-a157-ff45-cf30-4e8b96fa6473" style="color:rgb(99,99,99);background-color:rgb(255,255,255);border-color:rgb(255,255,255)" href="/my-vault" class="back-button w-inline-block">
@@ -104,14 +106,21 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <h6 style="pointer-events: none;">Back</h6>
+                                    <h6 style="pointer-events: none;" data-i18n="menu_pill_back">Back</h6>
                                 </a>
                             </div>
                             <a href="/about" class="button-menu w-inline-block">
                                 <div class="menu_pills">
-                                    <h4>About</h4>
+                                    <h4 data-i18n="menu_pill_about">About</h4>
                                 </div>
                             </a>
+                            <div class="language-dropdown">
+                                <select onchange="changeLanguage(this.value)" id="language-selector">
+                                    <option value="en">🇬🇧 English</option>
+                                    <option value="de">🇩🇪 Deutsch</option>
+                                    <option value="tr">🇹🇷 Türkçe</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="footer hide">
@@ -168,8 +177,8 @@
                                     </div>
                                 </div>
                                 <div class="div-block-29-copy">
-                                    <h4>Minesweeper</h4>
-                                    <p>The classic minefield game</p>
+                                    <h4 data-i18n="vault_minigame_minesweeper_header_text">Minesweeper</h4>
+                                    <p data-i18n="vault_minigame_minesweeper_text">The classic minefield game</p>
                                 </div>
                             </div>
                         </a>
@@ -191,8 +200,8 @@
                                     </div>
                                 </div>
                                 <div class="div-block-29-copy">
-                                    <h4>Wer bin ich?</h4>
-                                    <p>The popular guessing game</p>
+                                    <h4 data-i18n="vault_minigame_whoami_header_text">Wer bin ich?</h4>
+                                    <p data-i18n="vault_minigame_whoami_text">The popular guessing game</p>
                                 </div>
                             </div>
                         </a>
