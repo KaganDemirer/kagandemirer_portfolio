@@ -28,6 +28,7 @@ const translations = {
         'projects_results': 'Ergebnisse',
         'projects_role': 'Rolle',
         'projects_team': 'Team',
+        'play_btn': 'Spielen',
         
 
         // PROJECTS
@@ -88,6 +89,7 @@ const translations = {
         'projects_results': 'Results',
         'projects_role': 'Role',
         'projects_team': 'Team',
+        'play_btn': 'Play',
 
 
         // PROJECTS
@@ -148,6 +150,7 @@ const translations = {
         'projects_results': 'Sonuçlar',
         'projects_role': 'Rol',
         'projects_team': 'Ekip',
+        'play_btn': 'Oyna',
 
 
         // PROJECTS
