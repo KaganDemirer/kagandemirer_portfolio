@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kağan Demirer</title>
+    <meta name="description" content="Kağan Demirer - Projects">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../images/favicon.ico">
+</head>
+<body>
+    <!-- Background Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Spotlight Effect -->
+    <div class="spotlight"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="../../index.html" class="logo">KD.</a>
+        <div class="nav-links">
+            <div class="language-switcher">
+                <button class="lang-btn" id="lang-btn" aria-label="Select Language">
+                    <span class="current-flag">🇬🇧</span>
+                    <span class="current-lang">EN</span>
+                    <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button class="lang-option" data-lang="en"><span class="lang-flag">🇬🇧</span> EN</button>
+                    <button class="lang-option" data-lang="de"><span class="lang-flag">🇩🇪</span> DE</button>
+                    <button class="lang-option" data-lang="tr"><span class="lang-flag">🇹🇷</span> TR</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="work" style="padding-top: 150px;">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="projectsTitle">Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-container">
+            <!-- Project 1: Werbinich -->
+            <article class="project-row">
+                <div class="project-visual">
+                    <div class="project-image-wrapper">
+                        <img src="../../images/werbinich_dashboard.png" alt="Werbinich Game">
+                        <div class="project-overlay"></div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-year">2024</span>
+                        <span class="project-type" data-i18n="gameDev">Game Dev</span>
+                    </div>
+                    <h3 class="project-title">Werbinich</h3>
+                    <p class="project-desc" data-i18n="werbinichDesc">A character guessing game using Yes/No questions. Interactive and fun web experience designed to challenge players' deduction skills.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">HTML/CSS</span>
+                        <span class="tech-pill" data-i18n="gameLogic">Game Logic</span>
+                    </div>
+                    <a href="http://kagandemirer.de/werbinich" target="_blank" class="project-link">
+                        <span class="link-text" data-i18n="playGame">Play Game</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project 2: PORG -->
+            <article class="project-row reverse">
+                <div class="project-visual">
+                    <div class="project-image-wrapper">
+                        <img src="../../images/porg_dashboard.png" alt="PORG Chatbot">
+                        <div class="project-overlay"></div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-type" data-i18n="aiAssistant">AI Assistant</span>
+                    </div>
+                    <h3 class="project-title">PORG Chatbot</h3>
+                    <p class="project-desc" data-i18n="porgDesc">An intelligent chatbot developed to answer DHBW IT students' questions and provide detailed professor profiles instantly.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">NLP</span>
+                        <span class="tech-pill" data-i18n="university">University</span>
+                    </div>
+                    <div class="project-link disabled">
+                        <span class="link-text" data-i18n="internalProject">Internal Project</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: DönerGuide -->
+            <article class="project-row">
+                <div class="project-visual">
+                    <div class="project-image-wrapper">
+                        <img src="../../images/doenerguide_dashboard.png" alt="DönerGuide">
+                        <div class="project-overlay"></div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-type" data-i18n="webApp">Web App</span>
+                    </div>
+                    <h3 class="project-title">DönerGuide</h3>
+                    <p class="project-desc" data-i18n="doenerDesc">Find, review, and filter nearby kebab shops. Displays locations and ratings on an interactive map for the ultimate food discovery.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Google Maps API</span>
+                        <span class="tech-pill" data-i18n="hackathon">Hackathon</span>
+                    </div>
+                    <div class="project-link disabled">
+                        <span class="link-text" data-i18n="uniProject">University Project</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Tap to Serve -->
+            <article class="project-row reverse">
+                <div class="project-visual">
+                    <div class="project-image-wrapper">
+                        <img src="../../images/aio_dashboard.png" alt="Tap to Serve">
+                        <div class="project-overlay"></div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                        <span class="project-type" data-i18n="mobileSolution">Mobile Solution</span>
+                    </div>
+                    <h3 class="project-title">Tap to Serve</h3>
+                    <p class="project-desc" data-i18n="tapDesc">NFC-based restaurant service solution allowing customers to order and call for service directly via their smartphones.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">NFC</span>
+                        <span class="tech-pill" data-i18n="mobileApp">Mobile</span>
+                        <span class="tech-pill" data-i18n="uxDesign">UX Design</span>
+                    </div>
+                    <div class="project-link disabled">
+                        <span class="link-text" data-i18n="concept">Concept</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: EatWhatUNeed -->
+            <article class="project-row">
+                <div class="project-visual">
+                    <div class="project-image-wrapper">
+                        <img src="../../images/ewun_dashboard.png" alt="EatWhatUNeed">
+                        <div class="project-overlay"></div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                        <span class="project-type" data-i18n="lifestyle">Lifestyle</span>
+                    </div>
+                    <h3 class="project-title">EatWhatUNeed</h3>
+                    <p class="project-desc" data-i18n="ewunDesc">International recipe discovery platform with integrated shopping lists and social sharing features for foodies.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill" data-i18n="webApp">Web App</span>
+                        <span class="tech-pill" data-i18n="apiIntegration">API Integration</span>
+                        <span class="tech-pill" data-i18n="frontend">Frontend</span>
+                    </div>
+                    <div class="project-link disabled">
+                        <span class="link-text" data-i18n="concept">Concept</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/KaganDemirer" target="_blank" class="social_icon">GitHub</a>
+            <a href="https://www.linkedin.com/in/kagan-demirer-aa9b89240/" target="_blank" class="social_icon">LinkedIn</a>
+            <a href="https://www.xing.com/profile/Kagan_Demirer017686/web_profiles" target="_blank" class="social_icon">Xing</a>
+        </div>
+        <p class="copyright" data-i18n="footerText">© 2025 Kağan Demirer.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+</body>
+</html>
