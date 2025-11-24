@@ -1,0 +1,26 @@
+:root {
+    /* Colors - User Palette */
+    --bg-color: #222222;      /* Primary */
+    --bg-secondary: #222222;  /* Keep consistent for minimalist look */
+    --text-primary: #FFFFFF;  /* White */
+    --text-secondary: #7B7B7B; /* Secondary */
+    --accent-color: #F8F8F8;  /* Tertiary */
+    --accent-hover: #FFFFFF;
+    --border-color: #333333;  /* Darker than secondary for subtle borders */
+    
+    /* Fonts */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Spacing - Balanced */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
