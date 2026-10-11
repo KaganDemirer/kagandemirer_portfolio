@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Global variable for typewriter phrases (English only)
 let currentTypewriterPhrases = [
     "Full Stack Developer",
-    "M.Sc. Student",
+    "Software Engineer",
     "Problem Solver",
     "Tech Enthusiast"
 ];
@@ -229,7 +229,7 @@ function initTypewriter() {
 const translations = {
     en: {
         greeting: "Hello, I am",
-        heroDesc: "I build accessible, pixel-perfect, and performant web experiences. Currently pursuing a Master of Science in Computer Science at FernUniversität in Hagen.",
+        heroDesc: "I build accessible, pixel-perfect, and performant web experiences.",
         viewWork: "View My Work",
         projects: "Projects",
         vault: "The Vault",
@@ -239,7 +239,7 @@ const translations = {
         vaultTitle: "The Vault",
         vaultDesc: "A collection of documents, experiments, and mini-games.",
         aboutTitle: "About Me",
-        aboutText: "I'm Kağan, a Computer Science student pursuing my Master's at FernUniversität in Hagen. I completed my Bachelor's at DHBW Stuttgart in 2025. I focus on building efficient software and user-friendly applications. My journey involves full-stack development, from crafting intuitive front-ends to robust back-ends.",
+        aboutText: "I'm Kağan, a software engineer based near Stuttgart. I completed my Bachelor's (B.Sc. Informatik) at DHBW Stuttgart in 2025. I focus on building efficient software and user-friendly applications. My journey involves full-stack development, from crafting intuitive front-ends to robust back-ends.",
         aboutText2: "When I'm not coding, I'm exploring new technologies or optimizing workflows.",
         downloadResume: "Download Resume",
         
@@ -250,11 +250,6 @@ const translations = {
         expJobTitle: "Middleware Expert",
         expJobOrg: "W&W Group",
         expJobDesc: "Administration and management of enterprise middleware solutions and infrastructure.",
-
-        // 2025 - Present (Master)
-        expMasterTitle: "Master of Science",
-        expMasterOrg: "FernUniversität in Hagen",
-        expMasterDesc: "Part-time Computer Science studies specializing in software architecture and data science.",
 
         // 2022 - 2025 (Dual)
         expDualTitle: "Dual Student (B.Sc.)",
@@ -282,7 +277,7 @@ const translations = {
         frontend: "Frontend",
         
         // Typewriter
-        typewriter: ["Full Stack Developer", "M.Sc. Student", "Problem Solver", "Tech Enthusiast"],
+        typewriter: ["Full Stack Developer", "Software Engineer", "Problem Solver", "Tech Enthusiast"],
 
         // Projects
         werbinichDesc: "A character guessing game using Yes/No questions. Interactive and fun web experience designed to challenge players' deduction skills.",
@@ -313,8 +308,8 @@ const translations = {
         
         // Documents
         documentsTitle: "Documents",
-        studentResearchDesc: "Web framework for automated UX evaluation. A research project on automating user experience testing.",
-        bachelorThesisDesc: "My Bachelor's thesis on modern web technologies and their application in enterprise environments.",
+        bachelorDegreeTitle: "Bachelor's Degree",
+        bachelorDegreeDesc: "My Bachelor of Science degree certificate (B.Sc. Informatik, DHBW Stuttgart).",
         resumeDesc: "My complete professional resume detailing my career path, skills, and education.",
         comingSoon: "Coming Soon",
         careerPath: "Career Path & Profile",
@@ -324,7 +319,7 @@ const translations = {
     },
     de: {
         greeting: "Hallo, ich bin",
-        heroDesc: "Ich entwickle barrierefreie, pixelgenaue und leistungsstarke Web-Erlebnisse. Derzeit mache ich meinen Master of Science in Informatik an der FernUniversität in Hagen.",
+        heroDesc: "Ich entwickle barrierefreie, pixelgenaue und leistungsstarke Web-Erlebnisse.",
         viewWork: "Meine Arbeiten",
         projects: "Projekte",
         vault: "Tresor",
@@ -334,7 +329,7 @@ const translations = {
         vaultTitle: "Tresor",
         vaultDesc: "Eine Sammlung von Dokumenten, Experimenten und Minispielen.",
         aboutTitle: "Über Mich",
-        aboutText: "Ich bin Kağan, Informatikstudent im Master an der FernUniversität in Hagen. Meinen Bachelor habe ich 2025 an der DHBW Stuttgart abgeschlossen. Ich konzentriere mich auf die Entwicklung effizienter Software und benutzerfreundlicher Anwendungen. Mein Weg umfasst die Full-Stack-Entwicklung, von intuitiven Frontends bis hin zu robusten Backends.",
+        aboutText: "Ich bin Kağan, Software Engineer aus der Region Stuttgart. Meinen Bachelor (B.Sc. Informatik) habe ich 2025 an der DHBW Stuttgart abgeschlossen. Ich konzentriere mich auf die Entwicklung effizienter Software und benutzerfreundlicher Anwendungen. Mein Weg umfasst die Full-Stack-Entwicklung, von intuitiven Frontends bis hin zu robusten Backends.",
         aboutText2: "Wenn ich nicht programmiere, erkunde ich neue Technologien oder optimiere Workflows.",
         downloadResume: "Lebenslauf herunterladen",
         
@@ -345,11 +340,6 @@ const translations = {
         expJobTitle: "Middleware-Experte",
         expJobOrg: "W&W Gruppe",
         expJobDesc: "Administration und Verwaltung von Enterprise-Middleware-Lösungen und Infrastruktur.",
-
-        // 2025 - Present (Master)
-        expMasterTitle: "Master of Science",
-        expMasterOrg: "FernUniversität in Hagen",
-        expMasterDesc: "Berufsbegleitendes Informatikstudium mit Spezialisierung auf Softwarearchitekturen und Data Science.",
 
         // 2022 - 2025 (Dual)
         expDualTitle: "Dualer Student (B.Sc.)",
@@ -377,7 +367,7 @@ const translations = {
         frontend: "Frontend",
         
         // Typewriter
-        typewriter: ["Full Stack Entwickler", "M.Sc. Student", "Problemlöser", "Tech-Enthusiast"],
+        typewriter: ["Full Stack Entwickler", "Software Engineer", "Problemlöser", "Tech-Enthusiast"],
 
         // Projects
         werbinichDesc: "Ein Personen-Ratespiel mit Ja/Nein-Fragen. Interaktives Web-Erlebnis, das die Kombinationsgabe der Spieler herausfordert.",
@@ -408,8 +398,8 @@ const translations = {
         
         // Documents
         documentsTitle: "Dokumente",
-        studentResearchDesc: "Web-Framework zur automatisierten UX-Evaluation. Ein Forschungsprojekt zur Automatisierung von User Experience Tests.",
-        bachelorThesisDesc: "Meine Bachelorarbeit über moderne Webtechnologien und deren Anwendung in Unternehmensumgebungen.",
+        bachelorDegreeTitle: "Bachelorabschluss",
+        bachelorDegreeDesc: "Mein Bachelor-of-Science-Zeugnis (B.Sc. Informatik, DHBW Stuttgart).",
         resumeDesc: "Mein vollständiger professioneller Lebenslauf mit Details zu meinem Werdegang, Fähigkeiten und Ausbildung.",
         comingSoon: "Demnächst",
         careerPath: "Werdegang & Profil",
@@ -419,7 +409,7 @@ const translations = {
     },
     tr: {
         greeting: "Merhaba, ben",
-        heroDesc: "Erişilebilir, piksel mükemmelliğinde ve performanslı web deneyimleri geliştiriyorum. Şu anda FernUniversität in Hagen'de Bilgisayar Bilimleri üzerine Yüksek Lisans yapıyorum.",
+        heroDesc: "Erişilebilir, piksel mükemmelliğinde ve performanslı web deneyimleri geliştiriyorum.",
         viewWork: "Çalışmalarım",
         projects: "Projeler",
         vault: "Kasa",
@@ -429,7 +419,7 @@ const translations = {
         vaultTitle: "Kasa",
         vaultDesc: "Belgeler, deneyler ve mini oyunlardan oluşan bir koleksiyon.",
         aboutTitle: "Hakkımda",
-        aboutText: "Ben Kağan, FernUniversität in Hagen'de Yüksek Lisans yapan bir Bilgisayar Bilimleri öğrencisiyim. Lisans eğitimimi 2025 yılında DHBW Stuttgart'ta tamamladım. Verimli yazılımlar ve kullanıcı dostu uygulamalar geliştirmeye odaklanıyorum. Yolculuğum, sezgisel ön yüzlerden sağlam arka uçlara kadar tam yığın geliştirmeyi kapsıyor.",
+        aboutText: "Ben Kağan, Stuttgart civarında çalışan bir yazılım mühendisiyim. Lisans eğitimimi (B.Sc. Bilgisayar Bilimleri) 2025 yılında DHBW Stuttgart'ta tamamladım. Verimli yazılımlar ve kullanıcı dostu uygulamalar geliştirmeye odaklanıyorum. Yolculuğum, sezgisel ön yüzlerden sağlam arka uçlara kadar tam yığın geliştirmeyi kapsıyor.",
         aboutText2: "Kod yazmadığım zamanlarda yeni teknolojileri keşfediyor veya iş akışlarını optimize ediyorum.",
         downloadResume: "Özgeçmişi İndir",
         
@@ -440,11 +430,6 @@ const translations = {
         expJobTitle: "Middleware Uzmanı",
         expJobOrg: "W&W Group",
         expJobDesc: "Kurumsal ara katman yazılımı çözümlerinin ve altyapısının yönetimi ve idaresi.",
-
-        // 2025 - Present (Master)
-        expMasterTitle: "Yüksek Lisans",
-        expMasterOrg: "FernUniversität in Hagen",
-        expMasterDesc: "Yazılım mimarisi ve veri bilimi üzerine iş ile eş zamanlı eğitim.",
 
         // 2022 - 2025 (Dual)
         expDualTitle: "Dual Öğrenci (B.Sc.)",
@@ -472,7 +457,7 @@ const translations = {
         frontend: "Ön Yüz",
         
         // Typewriter
-        typewriter: ["Full Stack Geliştirici", "Yüksek Lisans Öğrencisi", "Problem Çözücü", "Teknoloji Tutkunu"],
+        typewriter: ["Full Stack Geliştirici", "Yazılım Mühendisi", "Problem Çözücü", "Teknoloji Tutkunu"],
 
         // Projects
         werbinichDesc: "Evet/Hayır soruları kullanan bir karakter tahmin oyunu. Oyuncuların çıkarım becerilerini zorlamak için tasarlanmış etkileşimli web deneyimi.",
@@ -503,8 +488,8 @@ const translations = {
         
         // Documents
         documentsTitle: "Belgeler",
-        studentResearchDesc: "Otomatik UX değerlendirmesi için web çerçevesi. Kullanıcı deneyimi testlerini otomatikleştirmek üzerine bir araştırma projesi.",
-        bachelorThesisDesc: "Modern web teknolojileri ve bunların kurumsal ortamlarda uygulanması üzerine lisans tezi.",
+        bachelorDegreeTitle: "Lisans Diploması",
+        bachelorDegreeDesc: "Bilgisayar Bilimleri lisans diplomam (B.Sc., DHBW Stuttgart).",
         resumeDesc: "Kariyer yolumu, becerilerimi ve eğitimimi detaylandıran tam profesyonel özgeçmişim.",
         comingSoon: "Çok Yakında",
         careerPath: "Kariyer Yolu & Profil",
